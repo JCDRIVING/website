@@ -1,0 +1,72 @@
+{% extends 'app/index.html' %}
+{% load static %}
+
+{% block title %}About Us{% endblock %}
+
+<body>
+    {% block content %}
+    <!-- Page Header Start -->
+    <div class="container-fluid page-header py-6 my-6 mt-0 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container text-center">
+            <h1 class="display-4 text-white animated slideInDown mb-4">About Us</h1>
+            <nav aria-label="breadcrumb animated slideInDown">
+                <ol class="breadcrumb justify-content-center mb-0">
+                    <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
+                    <li class="breadcrumb-item text-primary active" aria-current="page">About</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <!-- Page Header End -->
+
+
+    <!-- About Start -->
+    <div class="container-xxl py-6" id="abouttt">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="position-relative overflow-hidden ps-5 pt-5 h-100" style="min-height: 400px;">
+                    <img class="position-absolute w-100 h-100" src="{% static 'img/about-1.jpg' %}" alt="About image 1" style="object-fit: cover;">
+                    <img class="position-absolute top-0 start-0 bg-white pe-3 pb-3" src="{% static 'img/about-2.jpg' %}" alt="About image 2" style="width: 200px; height: 200px;">
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="h-100">
+                        <h6 class="text-primary text-uppercase mb-2">About Us</h6>
+                        <h1 class="display-6 mb-4">We Help Students To Pass Test & Get A License On The First Try</h1>
+                        <p>Welcome to J & C Driving school, your ultimate destination for comprehensive driving education and expert guidance. We are committed to empowering aspiring drivers with the skills, knowledge, and confidence they need to pass their tests and obtain their licenses on the very first attempt.  We provide top-notch training and personalized instruction tailored to each student's needs.<br><br>
+                           At J & C, we understand that obtaining a driver's license is a significant milestone in one's life, and we are dedicated to making this journey smooth and enjoyable. Our instructors create a supportive and encouraging learning environment, fostering confidence and instilling good driving habits from day one. Whether you are a novice driver or seeking to enhance your existing skills, our driving school is here to guide you every step of the way, helping you pass your tests with flying colors and become a confident, competent driver for life.</p>
+                        <p class="mb-4">Choose J & C Driving School for an exceptional learning experience that prepares you for success on the road. Join us today and embark on your journey towards becoming a skilled driver who can confidently navigate any driving challenge that comes your way.</p>
+                        <div class="row g-2 mb-4 pb-2">
+                            <div class="col-sm-6">
+                                <i class="fa fa-check text-primary me-2"></i>Fully Licensed
+                            </div>
+                            <div class="col-sm-6">
+                                <i class="fa fa-check text-primary me-2"></i>Afordable Fee 
+                            </div>
+                            <div class="col-sm-6">
+                                <i class="fa fa-check text-primary me-2"></i>Best Trainers
+                            </div>
+                            <div class="col-sm-6">
+                                <a class="btn btn-primary py-3 px-5" href="{% url 'app:index-view' %}#featuresss">Read More</a>
+                            </div>
+                        </div>
+                        <div class="row g-4">
+                            <div class="col-sm-6">
+                                <a class="d-inline-flex align-items-center btn btn-outline-primary border-2 p-2" href="tel:+16476371030">
+                                    <span class="flex-shrink-0 btn-square bg-primary">
+                                        <i class="fa fa-phone-alt text-white"></i>
+                                    </span>
+                                    <span class="px-3">Call Us: +1 647 637 1030</span>
+                                    <span class="px-3">Want to contact us regarding any queries?, send a massage to this support email: info@j&cdrivingschool.com</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+    {% endblock %}
+</body>
